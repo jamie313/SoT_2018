@@ -9,10 +9,8 @@ namespace Vehicle.UnitTests
         {
             // arrange
             var subject = new Car();
-
             // act
             subject.Start();
-
             // assert
             Assert.True(subject.Started, "Car hasn't started");
         }
@@ -52,7 +50,7 @@ namespace Vehicle.UnitTests
         }
 
         [Theory]
-        [InlineData(4, 4)]
+        [InlineData(5, 5)]
         // TODO: More data to be added
         public void car_can_move_forward_and_consumes_petrol(int timesToMoveForward, int expectedPetrolLitresConsumed)
         {
